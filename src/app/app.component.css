@@ -1,0 +1,8 @@
+
+.centralize {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    height: 100px;
+}

@@ -1,0 +1,94 @@
+.container{
+    border:solid 0.5px #666666	;
+    background-color: #AAAAAA;
+    width:250px;
+    height:350px;
+    margin:0 auto;
+    margin-top:15px;
+    border-radius:25px;
+    box-shadow:5px 4px 2px #696969;
+  }
+  
+  .monitor{
+    border:solid 1px #666666;
+    background-color:white;
+    width:220px;
+    height:255px;
+    margin:0 auto;
+    margin-top:7px;
+    border-radius:25px;
+    background-color:#f5f5f5;
+  }
+  
+  .homebutton{
+    border:solid 1px #666666;
+    margin: 0 auto;
+    width:40px;
+    height:40px;
+    border-radius:100px;
+    margin-top:8px; 
+    background-color:#808080;
+    box-shadow:0px 0px 0px  #dcdcdc inset;
+  }
+  
+  .incamera{
+  　border:solid 1px #111111;
+    height:15px;
+    width:15px;
+    margin: 0 auto;
+    margin-top:10px;
+    position:relative;
+    right:50px;
+    background-color:#333333;
+    border-radius:100px;
+  }
+  
+  .incamera2{
+  　border:solid 1px #444444;
+    background-color:#cccccc;
+    height:5px;
+    width:5px;
+    margin: 0 auto;
+    margin-top:1px;
+    position:relative;
+    top:4px; 
+    border-radius:100px;
+  }
+  
+  .mic{
+    border:solid 1px #666666;
+    height:10px;
+    width:55px;
+    position:relative;
+    left:25px;
+    bottom:2px;
+    border-radius:50px;
+    background-color:#777777;
+  }
+  
+  .monitor {
+      text-align: center;
+  }
+
+  img {
+      width: 80%;
+      padding: 10px;
+  }
+
+  h1, p {
+      padding: 0 11px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  h1 {
+      font-size: 110%;
+  }
+
+  p {
+    font-size: 120%;
+    margin-top: 10px;
+  }
