@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DeviceService } from './services/device.service';
+import { isMaster } from 'cluster';
 
 @Component({
   selector: 'app-root',
