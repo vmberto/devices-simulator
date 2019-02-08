@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DeviceService } from './services/device.service';
-import { isMaster } from 'cluster';
+import io from "socket.io-client";
+import { environment } from 'src/environments/environment';
+import { WebSocketService } from './services/websocket.service';
+
 
 @Component({
   selector: 'app-root',
@@ -10,8 +13,13 @@ import { isMaster } from 'cluster';
 export class AppComponent implements OnInit {
 
   public devices: any[];
-  
-  constructor(private deviceService: DeviceService) {
+
+
+  constructor(
+    private deviceService: DeviceService,
+    private webSocket: WebSocketService
+  ) {
+
   }
 
   ngOnInit() {
@@ -21,6 +29,10 @@ export class AppComponent implements OnInit {
         this.devices = res.data;
       });
 
+    this.webSocket.deviceEvent
+      .subscribe(device => {
+        this.devices.push(device);
+      });
 
   }
 

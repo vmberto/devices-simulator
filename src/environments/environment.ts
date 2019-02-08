@@ -1,8 +1,7 @@
-import {config} from './config';
 
 export const environment = {
   production: false,
-  API_URL: config.API_URL,
+  API_URL: 'http://localhost:5000'
 };
 
 /*

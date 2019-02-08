@@ -1,28 +1,29 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy, HostListener } from '@angular/core';
 import io from "socket.io-client";
 import { environment } from 'src/environments/environment';
-import { DeviceMessage } from './message.interface';
+import { DeviceMessage, DeviceSignal } from './message.interface';
+import { WebSocketService } from 'src/app/services/websocket.service';
 
 
 @Component({
   selector: 'app-salvus-devices',
   templateUrl: './salvus-devices.component.html',
   styleUrls: ['./salvus-devices.component.css']
+
 })
 export class SalvusDevicesComponent implements OnInit {
 
-  @Input() device: any;
-
-  private url = environment.API_URL;
-  private socket;
-
   private deviceMessage: DeviceMessage;
+  private deviceSignal: DeviceSignal;
 
-  constructor() {
-
-
-    
+  @Input() device: any;
+  @HostListener('window:beforeunload', ['$event'])
+  beforeUnloadHander(event) {
+    this.deviceSignal.status = false;
+    this.webSocket.statusSignalEmitter.next(this.deviceSignal);
   }
+
+  constructor(private webSocket: WebSocketService) { }
 
   ngOnInit() {
 
@@ -30,20 +31,26 @@ export class SalvusDevicesComponent implements OnInit {
       temperature: 0,
       deviceId: this.device.id,
       createdAt: new Date()
-    }
-    
-    this.socket = io.connect(this.url);
+    };
 
-    this.emit();
+    this.deviceSignal = {
+      status: true,
+      deviceId: this.device.id
+    };
+
+    this.webSocket.statusSignalEmitter.next(this.deviceSignal);
+
     setInterval(() => {
       this.emit();
-    }, 5000);
+    }, 20000);
 
   }
 
+
   private emit(): void {
     this.deviceMessage.temperature = Math.ceil(Math.random() * (30 - 15) + 15);
-    this.socket.emit('message-sent', this.deviceMessage);
+
+    this.webSocket.messageEmitter.next(this.deviceMessage);
   }
 
 }

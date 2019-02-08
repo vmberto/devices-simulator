@@ -3,3 +3,8 @@ export interface DeviceMessage {
     deviceId: number,
     createdAt: Date
 }
+
+export interface DeviceSignal {
+    deviceId: number,
+    status: boolean
+}
