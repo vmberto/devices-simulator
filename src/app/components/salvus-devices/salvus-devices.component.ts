@@ -36,7 +36,7 @@ export class SalvusDevicesComponent implements OnInit {
 
     setInterval(() => {
       this.emit();
-    }, 20000);
+    }, this.device.updateTime || 5000);
 
   }
 
