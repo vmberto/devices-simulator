@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n.centralize {\r\n    display: flex;\r\n    align-items: center;\r\n    vertical-align: middle;\r\n    justify-content: center;\r\n    height: 100px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLGFBQWE7QUFDakIiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4uY2VudHJhbGl6ZSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGhlaWdodDogMTAwcHg7XHJcbn0iXX0= */"
+module.exports = "\r\n.centralize {\r\n    display: flex;\r\n    align-items: center;\r\n    vertical-align: middle;\r\n    justify-content: center;\r\n    height: 100px;\r\n}\r\n\r\n\r\n.no-devices {\r\n    height: 100vh;\r\n    display: flex;\r\n    vertical-align: middle;\r\n    align-items: center;\r\n    justify-content: center;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.no-devices h1 {\r\n    font-family: 'Roboto', sans-serif;\r\n    font-weight: 300;\r\n    font-size: 50px;\r\n    color: white;\r\n    margin: 0 15px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLGFBQWE7QUFDakI7OztBQUdBO0lBQ0ksYUFBYTtJQUNiLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLHVCQUF1QjtJQUN2QixrQkFBa0I7QUFDdEI7OztBQUVBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsWUFBWTtJQUNaLGNBQWM7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4uY2VudHJhbGl6ZSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGhlaWdodDogMTAwcHg7XHJcbn1cclxuXHJcblxyXG4ubm8tZGV2aWNlcyB7XHJcbiAgICBoZWlnaHQ6IDEwMHZoO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5uby1kZXZpY2VzIGgxIHtcclxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJywgc2Fucy1zZXJpZjtcclxuICAgIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbiAgICBmb250LXNpemU6IDUwcHg7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBtYXJnaW46IDAgMTVweDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "\r\n.centralize {\r\n    display: flex;\r\n    align-items: ce
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n\n  <div *ngFor=\"let device of devices\" class=\"centralize col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12\">\n\n\n    <app-salvus-devices [device]=\"device\">\n\n\n    </app-salvus-devices>\n\n\n  </div>\n\n\n</div>"
+module.exports = "<div class=\"row\">\r\n\r\n  <div *ngFor=\"let device of devices\" class=\"centralize col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12\">\r\n\r\n\r\n    <app-salvus-devices [device]=\"device\">\r\n\r\n\r\n    </app-salvus-devices>\r\n\r\n\r\n  </div>\r\n\r\n\r\n</div>\r\n\r\n<div class=\"no-devices\" *ngIf=\"!devices || devices.length <= 0\">\r\n\r\n\r\n  <h1>\r\n\r\n    Nenhum dispositivo cadastrado no sistema\r\n\r\n  </h1>\r\n\r\n\r\n</div>"
 
 /***/ }),
 
@@ -181,14 +181,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SalvusDevicesComponent", function() { return SalvusDevicesComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_app_services_websocket_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/websocket.service */ "./src/app/services/websocket.service.ts");
+/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var src_app_services_websocket_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/websocket.service */ "./src/app/services/websocket.service.ts");
+
 
 
 
 var SalvusDevicesComponent = /** @class */ (function () {
     function SalvusDevicesComponent(webSocket) {
         this.webSocket = webSocket;
-        this.dashboardUrl = 'http://localhost:4200/#';
+        this.dashboardUrl = src_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].DASHBOARD_URL;
     }
     SalvusDevicesComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -226,7 +228,7 @@ var SalvusDevicesComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./salvus-devices.component.html */ "./src/app/components/salvus-devices/salvus-devices.component.html"),
             styles: [__webpack_require__(/*! ./salvus-devices.component.css */ "./src/app/components/salvus-devices/salvus-devices.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_websocket_service__WEBPACK_IMPORTED_MODULE_2__["WebSocketService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_services_websocket_service__WEBPACK_IMPORTED_MODULE_3__["WebSocketService"]])
     ], SalvusDevicesComponent);
     return SalvusDevicesComponent;
 }());
@@ -350,7 +352,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 var environment = {
     production: false,
-    API_URL: 'https://salvusserver.herokuapp.com'
+    API_URL: 'https://salvusserver.herokuapp.com',
+    DASHBOARD_URL: 'https://salvusdashboard.herokuapp.com/#'
 };
 
 
