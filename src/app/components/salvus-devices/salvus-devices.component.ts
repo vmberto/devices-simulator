@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, OnDestroy, HostListener } from '@angular/core';
-import io from "socket.io-client";
 import { environment } from 'src/environments/environment';
 import { DeviceMessage } from './message.interface';
 import { WebSocketService } from 'src/app/services/websocket.service';
