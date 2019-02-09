@@ -13,7 +13,7 @@ import { WebSocketService } from 'src/app/services/websocket.service';
 })
 export class SalvusDevicesComponent implements OnInit {
 
-  public dashboardUrl: string = 'http://localhost:4200/#'
+  public dashboardUrl: string = environment.DASHBOARD_URL;
   private deviceMessage: DeviceMessage;
 
   @Input() device: any;

@@ -6,3 +6,21 @@
     justify-content: center;
     height: 100px;
 }
+
+
+.no-devices {
+    height: 100vh;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.no-devices h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    color: white;
+    margin: 0 15px;
+}
