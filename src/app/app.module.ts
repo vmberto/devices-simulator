@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SalvusDevicesComponent } from './components/salvus-devices/salvus-devices.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Ng2OdometerModule } from 'ng2-odometer';
+
 
 @NgModule({
   declarations: [
@@ -12,9 +14,12 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2OdometerModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

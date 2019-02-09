@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DeviceService } from './services/device.service';
 import io from "socket.io-client";
-import { environment } from 'src/environments/environment';
 import { WebSocketService } from './services/websocket.service';
 
 
@@ -24,14 +23,20 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
-    this.deviceService.getAllDevices()
-      .subscribe((res: any) => {
+    this.deviceService.getAllDevices().subscribe(
+      (res: any) => {
         this.devices = res.data;
       });
 
-    this.webSocket.deviceEvent
-      .subscribe(device => {
-        this.devices.push(device);
+    this.webSocket.addedDeviceEvent.subscribe(
+      eventDevice => {
+        this.devices.push(eventDevice);
+      });
+
+    this.webSocket.deletedDeviceEvent.subscribe(
+      (environmentDeviceId) => {
+        const index = this.devices.findIndex(device => device.id === environmentDeviceId);
+        this.devices.splice(index, 1);
       });
 
   }

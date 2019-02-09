@@ -1,24 +1,27 @@
 <div class="container">
- 
+
   <div class="incamera">
     <div class="incamera2">
       <div class="mic">
       </div>
-   </div>
+    </div>
   </div>
-  
+
   <div class="monitor">
+
+
+    <h1> <a [href]="getUrl()" target="_blank"> Cliente {{ device.environment.clientId }} </a> </h1>
+
+    <p> {{ device.environment?.title }} </p>
+    <p> Dispositivo {{ device.id }} </p>
+
+    <div class="last-temperature">
+      <ng2-odometer [format]="'d'" [number]="deviceMessage?.temperature"></ng2-odometer><span class="deg-symbol">&deg;</span>
+    </div>
+
     <div class="logo">
       <img src="../../../assets/salvus-logo.PNG" alt="">
     </div>
-
-    <h1> <a href="#" target="_blank"> Real Hospital Português </a> </h1>
-    <p> {{ device.environment?.title }} </p>
-
-
   </div>
-  
-  <div class="homebutton">
-  </div>
+
 </div>
-  

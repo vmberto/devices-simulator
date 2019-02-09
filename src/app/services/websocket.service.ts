@@ -10,11 +10,11 @@ export class WebSocketService {
     private socket;
     private url = environment.API_URL;
 
-    public deviceEvent = new Subject<any>();
+    public addedDeviceEvent = new Subject<any>();
+    public deletedDeviceEvent = new Subject<any>();
 
     public messageEmitter = new Subject<any>();
 
-    public statusSignalEmitter = new Subject<any>();
 
     constructor() {
 
@@ -36,19 +36,17 @@ export class WebSocketService {
                     this.socket.emit('message-sent', message);
                 });
         
-        this.statusSignalEmitter
-            .subscribe(
-                status => {
-                    this.socket.emit('devices-signal', status);
-                });
-
 
     }
 
     private receivedEvents() {
 
-        this.socket.on('update-devices', (device) => {
-            this.deviceEvent.next(device);
+        this.socket.on('add-device', (device) => {
+            this.addedDeviceEvent.next(device);
+        });
+
+        this.socket.on('delete-device', (device) => {
+            this.deletedDeviceEvent.next(device);
         });
 
 

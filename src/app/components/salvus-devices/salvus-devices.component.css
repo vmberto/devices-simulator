@@ -71,12 +71,12 @@
   }
 
   img {
-      width: 80%;
+      width: 75%;
       padding: 10px;
   }
 
-  h1, p {
-      padding: 0 11px;
+  h1 {
+    padding: 11px;
   }
 
   a {
@@ -85,10 +85,23 @@
   }
 
   h1 {
-      font-size: 110%;
+      font-size: 200%;
   }
 
   p {
-    font-size: 120%;
-    margin-top: 10px;
+    font-size: 150%;
+  }
+
+  .last-temperature {
+    height: 61%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 520%;
+  }
+
+  .deg-symbol
+   {
+    font-size: 30px;
   }
