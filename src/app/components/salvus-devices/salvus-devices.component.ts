@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, OnDestroy, HostListener } from '@angular/core';
-import io from "socket.io-client";
 import { environment } from 'src/environments/environment';
 import { DeviceMessage } from './message.interface';
 import { WebSocketService } from 'src/app/services/websocket.service';
@@ -36,7 +35,7 @@ export class SalvusDevicesComponent implements OnInit {
 
     setInterval(() => {
       this.emit();
-    }, 20000);
+    }, this.device.updateTime || 5000);
 
   }
 
