@@ -1,6 +1,6 @@
 .container{
-    border:solid 0.5px #666666	;
-    background-color: #AAAAAA;
+    border:solid 0.5px #696969	;
+    background-color: #696969;
     width:250px;
     height:350px;
     margin:0 auto;
@@ -9,8 +9,8 @@
   }
   
   .monitor{
-    border:solid 1px #666666;
-    background-color:white;
+    border:solid 1px #AAAAAA;
+    background-color:#AAAAAA;
     width:220px;
     height:255px;
     margin:0 auto;
@@ -70,8 +70,8 @@
   }
 
   img {
-      width: 75%;
-      padding: 10px;
+      width: 50%;
+      padding-top: 5px;
   }
 
   h1 {
