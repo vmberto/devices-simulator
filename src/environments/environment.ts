@@ -1,7 +1,7 @@
 
 export const environment = {
   production: false,
-  API_URL: 'http://localhost:5000',
+  API_URL: 'http://salvusserver.herokuapp.com',
   DASHBOARD_URL: 'http://localhost:4200/#'
 };
 

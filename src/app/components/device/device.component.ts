@@ -5,12 +5,12 @@ import { WebSocketService } from 'src/app/services/websocket.service';
 
 
 @Component({
-  selector: 'app-salvus-devices',
-  templateUrl: './salvus-devices.component.html',
-  styleUrls: ['./salvus-devices.component.css']
+  selector: 'app-device',
+  templateUrl: './device.component.html',
+  styleUrls: ['./device.component.css']
 
 })
-export class SalvusDevicesComponent implements OnInit {
+export class DeviceComponent implements OnInit {
 
   public dashboardUrl: string = environment.DASHBOARD_URL;
   private deviceMessage: DeviceMessage;
