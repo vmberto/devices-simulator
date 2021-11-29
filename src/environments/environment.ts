@@ -1,6 +1,6 @@
 
 export const environment = {
   production: false,
-  API_URL: 'https://salvusserver.herokuapp.com',
-  DASHBOARD_URL: 'https://salvusdashboard.herokuapp.com/#'
+  API_URL: 'http://devices-service.herokuapp.com',
+  DASHBOARD_URL: 'http://devices-dashboard.herokuapp.com',
 };
