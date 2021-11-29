@@ -353,7 +353,7 @@ __webpack_require__.r(__webpack_exports__);
 var environment = {
     production: false,
     API_URL: 'https://devices-service.herokuapp.com',
-    DASHBOARD_URL: 'https://devices-dashboard.herokuapp.com',
+    DASHBOARD_URL: 'https://devices-dashboard.herokuapp.com/#',
 };
 
 
