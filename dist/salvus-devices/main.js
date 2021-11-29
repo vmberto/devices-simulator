@@ -352,8 +352,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 var environment = {
     production: false,
-    API_URL: 'https://salvusserver.herokuapp.com',
-    DASHBOARD_URL: 'https://salvusdashboard.herokuapp.com/#'
+    API_URL: 'http://devices-service.herokuapp.com',
+    DASHBOARD_URL: 'http://devices-dashboard.herokuapp.com',
 };
 
 
@@ -392,7 +392,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/umberto/Documents/sd/salvus-devices/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/umberto/Documents/sd/devices-simulator/src/main.ts */"./src/main.ts");
 
 
 /***/ }),

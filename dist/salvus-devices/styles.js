@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/umberto/Documents/sd/salvus-devices/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/umberto/Documents/sd/devices-simulator/src/styles.css */"./src/styles.css");
 
 
 /***/ })
