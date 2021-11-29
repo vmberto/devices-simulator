@@ -10,7 +10,7 @@
   <div class="monitor">
 
 
-    <h1> <a [href]="getUrl()" target="_blank"> Cliente {{ device.environment.clientId }} </a> </h1>
+    <h1> <a [href]="getUrl()" target="_blank">  {{ device.environment?.client?.name }} </a> </h1>
 
     <p> {{ device.environment?.title }} </p>
     <p> Dispositivo {{ device.id }} </p>
