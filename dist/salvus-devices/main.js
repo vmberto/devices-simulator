@@ -165,7 +165,7 @@ module.exports = ".container{\n    border:solid 0.5px #696969\t;\n    background
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <div class=\"incamera\">\n    <div class=\"incamera2\">\n      <div class=\"mic\">\n      </div>\n    </div>\n  </div>\n\n  <div class=\"monitor\">\n\n\n    <h1> <a [href]=\"getUrl()\" target=\"_blank\"> Cliente {{ device.environment.clientId }} </a> </h1>\n\n    <p> {{ device.environment?.title }} </p>\n    <p> Dispositivo {{ device.id }} </p>\n\n    <div class=\"last-temperature\">\n      <ng2-odometer [format]=\"'d'\" [number]=\"deviceMessage?.temperature\"></ng2-odometer><span class=\"deg-symbol\">&deg;</span>\n    </div>\n\n    <div class=\"logo\">\n      <img src=\"assets/logo.png\" alt=\"\">\n    </div>\n  </div>\n\n</div>"
+module.exports = "<div class=\"container\">\n\n  <div class=\"incamera\">\n    <div class=\"incamera2\">\n      <div class=\"mic\">\n      </div>\n    </div>\n  </div>\n\n  <div class=\"monitor\">\n\n\n    <h1> <a [href]=\"getUrl()\" target=\"_blank\">  {{ device.environment?.client?.name }} </a> </h1>\n\n    <p> {{ device.environment?.title }} </p>\n    <p> Dispositivo {{ device.id }} </p>\n\n    <div class=\"last-temperature\">\n      <ng2-odometer [format]=\"'d'\" [number]=\"deviceMessage?.temperature\"></ng2-odometer><span class=\"deg-symbol\">&deg;</span>\n    </div>\n\n    <div class=\"logo\">\n      <img src=\"assets/logo.png\" alt=\"\">\n    </div>\n  </div>\n\n</div>"
 
 /***/ }),
 
@@ -352,8 +352,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 var environment = {
     production: false,
-    API_URL: 'http://devices-service.herokuapp.com',
-    DASHBOARD_URL: 'http://devices-dashboard.herokuapp.com',
+    API_URL: 'https://devices-service.herokuapp.com',
+    DASHBOARD_URL: 'https://devices-dashboard.herokuapp.com',
 };
 
 
